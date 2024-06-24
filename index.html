@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Online</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Online v.01</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Adição:</h2>
+            <input class="corpoCalculo" type="number" id="ad1" placeholder="Digite o primeiro número..."/> <strong> + </strong>
+            <input class="corpoCalculo" type="number" id="ad2" placeholder="Digite o segundo número..."/>
+            <button  type="submit" onclick="somar()">Calcular</button>
+            <p id="res1">
+
+            </p>
+        </div>
+        <div class="container">
+            <h2>Subtração:</h2>
+            <input id="sub1" class="corpoCalculo" type="number" placeholder="Digite o primeiro número..."/> <strong> - </strong>
+            <input id="sub2" class="corpoCalculo" type="number" placeholder="Digite o segundo número..."/>
+            <button onclick="sub()" type="submit">Calcular</button>
+            <p id="res2">
+                
+            </p>
+        </div>
+        <div class="container">
+            <h2>Multiplicação:</h2>
+            <input id="mul1" class="corpoCalculo" type="number" placeholder="Digite o primeiro número..."/><strong>*</strong>
+            <input id="mul2" class="corpoCalculo" type="number" placeholder="Digite o segundo número..."/>
+            <button onclick="mult()"  type="submit">Calcular</button>
+            <p id="res3">
+                
+            </p>
+        </div>
+        <div class="container">
+            <h2>Divisão:</h2>
+            <input id="div1" class="corpoCalculo" type="number" placeholder="Digite o primeiro número..."/><strong> / </strong>
+            <input id="div2" class="corpoCalculo" type="number" placeholder="Digite o segundo número..."/>
+            <button onclick="divi()"  type="submit">Calcular</button>
+            <p id="res4">
+                
+            </p>
+        </div>
+        <div class="container">
+            <h2>Exponenaciação:</h2>
+            <input id="exp1" class="corpoCalculo" type="number" placeholder="Digite o primeiro número..."/> <strong>**</strong>
+            <input id="exp2" class="corpoCalculo" type="number" placeholder="Digite o segundo número..."/>
+            <button onclick="expo()"  type="submit">Calcular</button>
+            <p id="res5">
+                
+            </p>
+        </div>
+    </main>
+
+    <footer>
+    <div class="rodaPe">
+        <p>
+            Primeira calculadora projeto versão 0.1 --- Desenvolvido por <h6>Leonardo Almeida &copy;</h6>
+        </p>
+    </div>
+
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
